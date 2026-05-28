@@ -1,0 +1,19 @@
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-slow {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
+.animate-spin-reverse-slow { animation: spin-reverse-slow 30s linear infinite; }
+.animate-spin-slow-delay { animation: spin-slow 25s linear infinite; }
+.animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
